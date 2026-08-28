@@ -153,3 +153,136 @@ body {
 .user-profile button:hover {
     color: #252525;
 }
+
+/* =========================
+   DASHBOARD HEADER
+========================= */
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 36px;
+}
+
+.greet {
+    flex: 1;
+}
+
+.greet h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+
+    color: #252525;
+}
+
+.slogan {
+    margin-top: 6px;
+
+    font-size: 14px;
+    color: #777772;
+}
+
+.date-time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 9px 12px;
+
+    color: #666662;
+    font-size: 13px;
+
+    border: 1px solid #e8e8e5;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+}
+
+.date-time i {
+    color: #315c4d;
+}
+
+.theme button {
+    padding: 9px 12px;
+
+    border: 1px solid #e8e8e5;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+    color: #555550;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.theme button:hover {
+    background-color: #f3f3f0;
+    border-color: #dcdcd8;
+}
+
+.notification {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e8e8e5;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+    color: #666662;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.notification:hover {
+    background-color: #f3f3f0;
+    color: #252525;
+}
+
+.add-task {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #315c4d;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.add-task:hover {
+    background-color: #274c40;
+}
+
+.add-task:active {
+    transform: translateY(1px);
+}
