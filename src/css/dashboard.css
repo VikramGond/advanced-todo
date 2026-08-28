@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Inter, sans-serif;
+    background-color: #f7f7f5;
+    color: #252525;
+}
+
+body {
+    display: flex;
+}
+
+.navigation {
+    width: 240px;
+    min-height: 100vh;
+    padding: 28px 18px;
+
+    background-color: #ffffff;
+    border-right: 1px solid #e8e8e5;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard {
+    flex: 1;
+    padding: 32px;
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sidebar-nav a {
+    display: block;
+
+    padding: 11px 12px;
+
+    text-decoration: none;
+    color: #666662;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 8px;
+
+    transition: 
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+    background-color: #f3f3f0;
+    color: #252525;
+}
+
+.sidebar-nav a.active {
+    background-color: #eef2f0;
+    color: #315c4d;
+    font-weight: 600;
+}
+
+.navigation hr {
+    width: 100%;
+    margin: 28px 0;
+
+    border: 0;
+    border-top: 2px solid #e8e8e5;
+}
+
+.settings {
+    display: block;
+
+    width: 100%;
+    padding: 11px 12px;
+
+    text-decoration: none;
+
+    color: #666662;
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 8px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.settings:hover {
+    background-color: #f3f3f0;
+    color: #252525;
+}
+
+.user-profile {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e8e8e5;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.user-name {
+    flex: 1;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.user-profile button {
+    border: none;
+    background: transparent;
+
+    color: #888;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.user-profile button:hover {
+    color: #252525;
+}
