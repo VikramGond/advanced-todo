@@ -1,7 +1,7 @@
-import { sidebar } from "../../components/sidebar.js";
-import { header } from "../../components/header.js";
-import { stats } from "../../components/stats.js";
-import { quote } from "../../components/quote.js";
+import { sidebar } from "../../components/dashboard/sidebar.js";
+import { header } from "../../components/dashboard/header.js";
+import { stats } from "../../components/dashboard/stats.js";
+import { quote } from "../../components/dashboard/quote.js";
 const navigation = document.querySelector("#navigation");
 const headerContainer = document.querySelector("#dashboard-header");
 const quoteContainer = document.querySelector("#quote");
