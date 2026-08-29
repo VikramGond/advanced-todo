@@ -1,5 +1,5 @@
 export const header = () => {
-    return `
+  return `
         <div class="greet" id="greet">
             <h2>Good Evening, Vikram 👋</h2>
             <p class="slogan" id="slogan">Let's make today count</p>
@@ -19,5 +19,5 @@ export const header = () => {
         </button>
 
         <button class="add-task" id="add-task"> Add Task</button>
-    `
-}
+    `;
+};

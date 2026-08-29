@@ -1,10 +1,8 @@
 import { tasksItems } from "./tasksItems.js";
-import { task_data } from "../../data/task_data.js"
+import { task_data } from "../../data/task_data.js";
 
 export const todaysTasks = () => {
-
-    const taskHTML = task_data.map((task) => tasksItems(task)).join("")
-
+  const taskHTML = task_data.map((task) => tasksItems(task)).join("");
 
   return `
          <div class="tasks-header">

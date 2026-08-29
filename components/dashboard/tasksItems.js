@@ -1,5 +1,5 @@
 export const tasksItems = (task) => {
-    return `
+  return `
         <div class="task-item">
             <input type="checkbox" class="task-checkbox">
 

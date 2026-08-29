@@ -1,5 +1,5 @@
 export const sidebar = () => {
-    return `
+  return `
         <div class="logo" id="logo">
             <h1>DoToDo</h1>
         </div>

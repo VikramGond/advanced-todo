@@ -1,51 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../src/css/dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="../src/css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <aside class="navigation" id="navigation">
-        <!-- Navigation rendered by JS -->
+      <!-- Navigation rendered by JS -->
     </aside>
     <main class="dashboard" id="dashboard">
+      <header class="dashboard-header" id="dashboard-header">
+        <!-- Header rendered by JS -->
+      </header>
 
-        <header class="dashboard-header" id="dashboard-header">
-            <!-- Header rendered by JS -->
-        </header>
+      <section class="quote" id="quote"></section>
 
-        <section class="quote" id="quote">
+      <section class="stats" id="stats">
+        <!-- Stats rendered by JS -->
+      </section>
 
-        </section>
+      <section class="today-tasks" id="today-tasks">
+        <!-- Today's tasks rendered by JS -->
+      </section>
 
-        <section class="stats" id="stats">
-            <!-- Stats rendered by JS -->
-        </section>
+      <section class="dashboard-bottom">
+        <div id="calendar">
+          <!-- Calendar rendered by JS -->
+        </div>
 
-        <section class="today-tasks" id="today-tasks">
-            <!-- Today's tasks rendered by JS -->
-        </section>
+        <div id="productivity">
+          <!-- Productivity graph rendered by JS -->
+        </div>
 
-        <section class="dashboard-bottom">
-
-            <div id="calendar">
-                <!-- Calendar rendered by JS -->
-            </div>
-
-            <div id="productivity">
-                <!-- Productivity graph rendered by JS -->
-            </div>
-
-            <div id="streak">
-                <!-- Streak rendered by JS -->
-            </div>
-
-        </section>
+        <div id="streak">
+          <!-- Streak rendered by JS -->
+        </div>
+      </section>
     </main>
 
     <script type="module" src="../src/javascript/dashboard.js"></script>
-</body>
+  </body>
 </html>

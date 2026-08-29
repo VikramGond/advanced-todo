@@ -1,5 +1,5 @@
 export const quote = () => {
-    return `
+  return `
         <div class="quote-holder" id="quote-holder">
             <div class="quote" id="quote">
                 <h4>
@@ -13,5 +13,5 @@ export const quote = () => {
 
             <i class="fa-solid fa-rotate"></i>
         </div>
-    `
-}
+    `;
+};
