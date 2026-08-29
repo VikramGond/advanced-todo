@@ -1,10 +1,17 @@
+import { tasksItems } from "./tasksItems.js";
+import { task_data } from "../../data/task_data.js"
+
 export const todaysTasks = () => {
+
+    const taskHTML = task_data.map((task) => tasksItems(task)).join("")
+
+
   return `
          <div class="tasks-header">
 
             <div class="tasks-title">
                 <h2>Today's Tasks</h2>
-                <p>5 tasks planned for today</p>
+                <p>${task_data.length} tasks planned for today</p>
             </div>
 
             <div class="tasks-actions">
@@ -24,9 +31,7 @@ export const todaysTasks = () => {
 
 
         <div class="task-list">
-
-            <!-- Tasks will be rendered here -->
-
+            ${taskHTML}
         </div>
 
         <div class="show-more">

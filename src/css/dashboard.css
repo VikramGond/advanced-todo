@@ -709,3 +709,85 @@ body {
 
     font-size: 11px;
 }
+
+/* =========================
+   TASK ITEM
+========================= */
+
+.task-item {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 18px 6px;
+
+    border-bottom: 1px solid var(--border-light);
+
+    transition: background-color 0.2s ease;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item:hover {
+    background-color: var(--bg-subtle);
+}
+
+
+/* CHECKBOX */
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    accent-color: var(--accent);
+
+    cursor: pointer;
+}
+
+
+/* TASK CONTENT */
+
+.task-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.task-content h3 {
+    margin-bottom: 5px;
+
+    color: var(--text-primary);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.task-content p {
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* TASK DATE */
+
+.task-date {
+    padding: 6px 10px;
+
+    background-color: var(--bg-subtle);
+
+    color: var(--text-secondary);
+
+    font-size: 12px;
+
+    border-radius: 6px;
+
+    white-space: nowrap;
+}
