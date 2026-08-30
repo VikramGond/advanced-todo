@@ -4,7 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Add - Tasks</title>
-        <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="../assets/favicon/favicon.ico"
+            type="image/x-icon"
+        />
         <link rel="stylesheet" href="../src/css/global.css" />
         <link rel="stylesheet" href="../src/css/sidebar.css" />
         <link rel="stylesheet" href="../src/css/add-task.css" />
@@ -20,6 +24,100 @@
     <body>
         <aside class="navigation" id="navigation"></aside>
 
+        <main class="add-task" id="add-task">
+            <section class="header" id="header">
+                <h1 class="heading" id="heading">Add Task</h1>
+                <h4>Create something worth finishing</h4>
+            </section>
+
+            <section class="taks-form-container" id="task-form-container">
+                <form id="add-task-form">
+                    <div class="form-group">
+                        <label for="task-title">Task Title</label>
+
+                        <input
+                            type="text"
+                            id="task-title"
+                            placeholder="What do you need to do?"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-description">
+                            Description
+                            <span>(Optional)</span>
+                        </label>
+
+                        <textarea
+                            id="task-description"
+                            placeholder="Add more details..."
+                        ></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="task-date">Due Date</label>
+
+                            <input type="date" id="task-date" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="task-priority">Priority</label>
+
+                            <select id="task-priority">
+                                <option value="low">Low</option>
+
+                                <option value="medium" selected>Medium</option>
+
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Category</label>
+
+                        <div class="category-options">
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="personal"
+                                />
+                                Personal
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="work"
+                                />
+                                Work
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="study"
+                                />
+                                Study
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+
+                        <button type="submit" class="submit-btn">
+                            + Add Task
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
         <script type="module" src="../src/javascript/addTasks.js"></script>
     </body>
 </html>
