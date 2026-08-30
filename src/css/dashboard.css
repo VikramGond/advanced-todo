@@ -281,11 +281,6 @@ body {
     margin-bottom: 36px;
 }
 
-.dashboard-content {
-    flex: 1;
-
-    overflow-y: auto;
-}
 
 /* GREETING */
 
@@ -446,7 +441,7 @@ body {
 }
 
 .quote {
-    max-width: 850px;
+    width: 100%;
 }
 
 .quote h4 {
@@ -596,8 +591,15 @@ body {
 
     background-color: var(--bg-surface);
 
+    display: flex;
+    flex-direction: column;
+
+    height: 360px;
+
     border: 1px solid var(--border);
     border-radius: 12px;
+
+    overflow: hidden;
 }
 
 /* TASK HEADER */
@@ -670,7 +672,12 @@ body {
 /* TASK LIST */
 
 .task-list {
+    flex: 1;
+
     border-top: 1px solid var(--border-light);
+
+    overflow-y: auto;
+
 }
 
 /* SHOW MORE */
