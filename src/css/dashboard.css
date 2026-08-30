@@ -448,7 +448,7 @@ body {
 
 /* QUOTE REFRESH */
 
-.quote-holder > i {
+.refresh-btn {
   width: 34px;
   height: 34px;
 
@@ -460,8 +460,9 @@ body {
 
   color: var(--text-muted);
 
-  border: 1px solid var(--quote-border);
+  border: 1px solid var(--quote-muted);
   border-radius: 8px;
+
 
   cursor: pointer;
 
@@ -470,7 +471,7 @@ body {
     color 0.2s ease;
 }
 
-.quote-holder > i:hover {
+.refresh-btn:hover {
   background-color: var(--bg-surface);
   color: var(--accent);
 }

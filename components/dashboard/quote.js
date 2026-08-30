@@ -1,17 +1,17 @@
-export const quote = () => {
+export const quote = (quote) => {
   return `
         <div class="quote-holder" id="quote-holder">
             <div class="quote" id="quote">
                 <h4>
-                    "The road doesn't care about your excuses. It only remembers the steps you take."
+                    ${quote.quote}
                 </h4>
 
                 <p>
-                    -Vikram
+                    -${quote.author}
                 </p>
             </div>
 
-            <i class="fa-solid fa-rotate"></i>
+            <button id="refresh-btn" class="refresh-btn"><i class="fa-solid fa-rotate"></i></button>
         </div>
     `;
 };
