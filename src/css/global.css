@@ -1,0 +1,85 @@
+/* =========================
+   CSS VARIABLES
+========================= */
+
+:root {
+    /* Backgrounds */
+    --bg-primary: #f7f7f5;
+    --bg-surface: #ffffff;
+    --bg-subtle: #f3f3f0;
+
+    /* Text */
+    --text-primary: #252525;
+    --text-secondary: #666662;
+    --text-muted: #777772;
+    --text-light: #8a8a85;
+
+    /* Accent */
+    --accent: #315c4d;
+    --accent-hover: #274c40;
+    --accent-light: #eef2f0;
+
+    /* Borders */
+    --border: #e8e8e5;
+    --border-light: #eeeeeb;
+    --border-dark: #d6d6d1;
+
+    /* Special surfaces */
+    --quote-bg: #f1f3ef;
+    --quote-border: #e4e7e2;
+    --quote-text: #39433e;
+    --quote-muted: #7a817c;
+}
+
+/* ===============================
+    Dark Mode
+============================== */
+
+[data-theme="dark"] {
+    --bg-primary: #1c1d1b;
+    --bg-surface: #252724;
+    --bg-subtle: #30322f;
+
+    --text-primary: #f2f2ed;
+    --text-secondary: #b5b7b1;
+    --text-muted: #949790;
+    --text-light: #777a74;
+
+    --border: #393b37;
+    --border-light: #333530;
+    --border-dark: #4a4d47;
+
+    --accent: #6f9f89;
+    --accent-hover: #5d8b76;
+    --accent-light: #2c3b34;
+
+    --quote-bg: #393b37;
+    --quote-text: #f1f3ef;
+    --quote-border: #2c3b34;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    height: 100vh;
+    overflow: hidden;
+
+    font-family: Inter, sans-serif;
+
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+
+    display: flex;
+}

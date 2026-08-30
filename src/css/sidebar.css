@@ -1,0 +1,165 @@
+/* =========================
+   SIDEBAR
+========================= */
+
+.navigation {
+    width: 240px;
+    height: 100vh;
+    flex-shrink: 0;
+
+    padding: 28px 18px;
+
+    background-color: var(--bg-surface);
+    border-right: 1px solid var(--border);
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+}
+
+/* LOGO */
+
+.logo {
+    margin-bottom: 40px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+
+    color: var(--text-primary);
+}
+
+/* NAVIGATION */
+
+.sidebar-nav ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.sidebar-nav a {
+    display: block;
+
+    padding: 11px 12px;
+
+    text-decoration: none;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 8px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+    background-color: var(--bg-subtle);
+    color: var(--text-primary);
+}
+
+.sidebar-nav a.active {
+    background-color: var(--accent-light);
+    color: var(--accent);
+
+    font-weight: 600;
+}
+
+/* SIDEBAR DIVIDER */
+
+.navigation hr {
+    width: 100%;
+
+    margin: 28px 0;
+
+    border: none;
+    border-top: 2px solid var(--border);
+}
+
+/* SETTINGS */
+
+.settings {
+    display: block;
+
+    width: 100%;
+    padding: 11px 12px;
+
+    text-decoration: none;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 8px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.settings:hover {
+    background-color: var(--bg-subtle);
+    color: var(--text-primary);
+}
+
+/* USER PROFILE */
+
+.user-profile {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border);
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.user-name {
+    flex: 1;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+.user-profile button {
+    border: none;
+
+    background: transparent;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.user-profile button:hover {
+    color: var(--text-primary);
+}
