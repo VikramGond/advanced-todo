@@ -23,7 +23,7 @@ let quotes = [];
 // ===========================
 
 if (navigation) {
-    navigation.innerHTML = sidebar();
+    navigation.innerHTML = sidebar("dashboard");
 }
 if (headerContainer) {
     headerContainer.innerHTML = header();
@@ -98,10 +98,10 @@ const changeTheme = () => {
 
     if (isDark) {
         document.documentElement.removeAttribute("data-theme");
-        themeBtn.innerHTML = `<button>Light</button>`;
+        themeBtn.innerHTML = `<button>Dark</button>`;
     } else {
         document.documentElement.dataset.theme = "dark";
-        themeBtn.innerHTML = `<button>Dark</button>`;
+        themeBtn.innerHTML = `<button>Light</button>`;
     }
 };
 
