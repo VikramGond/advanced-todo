@@ -1,15 +1,15 @@
-export const sidebar = () => {
-  return `
+export const sidebar = (activePage) => {
+    return `
         <div class="logo" id="logo">
             <h1>DoToDo</h1>
         </div>
 
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="#dashboard" class="active">Dashboard</a></li>
-                <li><a href="#tasks">Tasks</a></li>
-                <li><a href="#calendar">Calendar</a></li>
-                <li><a href="#addTask">Add Task</a></li>
+                <li><a href="dashboard.html" class="${activePage === "dashboard" ? "active" : ""}">Dashboard</a></li>
+                <li><a href="tasks.html" class="${activePage === "tasks" ? "active" : ""}">Tasks</a></li>
+                <li><a href="calendar.html"class="${activePage === "calendar" ? "active" : ""}">Calendar</a></li>
+                <li><a href="add-tasks.html"class="${activePage === "add-tasks" ? "active" : ""}">Add Task</a></li>
             </ul>
         </nav>
 
