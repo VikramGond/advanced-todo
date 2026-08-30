@@ -82,4 +82,11 @@ body {
     color: var(--text-primary);
 
     display: flex;
+
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+body.page-loaded {
+    opacity: 1;
 }
