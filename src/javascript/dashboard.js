@@ -93,15 +93,34 @@ const renderQuote = () => {
 };
 
 //=========THEME=========
+
+const setTheme = (theme) => {
+    if (theme === "dark") {
+        document.documentElement.dataset.theme = "dark";
+        themeBtn.innerHTML = `<button>Light</button>`;
+    } else {
+        document.documentElement.removeAttribute("data-theme");
+        themeBtn.innerHTML = `<button>Dark</button>`;
+    }
+
+    localStorage.setItem("theme", theme);
+};
+
 const changeTheme = () => {
     const isDark = document.documentElement.dataset.theme === "dark";
 
     if (isDark) {
-        document.documentElement.removeAttribute("data-theme");
-        themeBtn.innerHTML = `<button>Dark</button>`;
+        setTheme("light");
     } else {
-        document.documentElement.dataset.theme = "dark";
-        themeBtn.innerHTML = `<button>Light</button>`;
+        setTheme("dark");
+    }
+};
+
+const loadTheme = () => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+        setTheme(savedTheme);
     }
 };
 
@@ -120,3 +139,4 @@ if (themeBtn) {
 //========== GLOBAL FUNCTION CALL===========
 
 initializeQuote();
+loadTheme();
