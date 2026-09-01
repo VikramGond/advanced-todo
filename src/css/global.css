@@ -90,3 +90,30 @@ body {
 body.page-loaded {
     opacity: 1;
 }
+
+button {
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--accent);
+    color: var(--bg-surface);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
