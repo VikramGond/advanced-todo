@@ -223,7 +223,7 @@
 
     flex-shrink: 0;
 
-    color: var(--text-muted);
+    color: var(--bg-surface);
 
     border: 1px solid var(--quote-muted);
     border-radius: 8px;
