@@ -39,7 +39,6 @@ if (taskContainer) {
 //    VARIABLES FOR DYNAMIC COMPONENTS
 // =========================================
 
-const themeBtn = document.querySelector("#theme");
 
 // ===========================
 //    FUNCTIONS
@@ -91,52 +90,3 @@ const renderQuote = () => {
         });
     }
 };
-
-//=========THEME=========
-
-const setTheme = (theme) => {
-    if (theme === "dark") {
-        document.documentElement.dataset.theme = "dark";
-        themeBtn.innerHTML = `<button>Light</button>`;
-    } else {
-        document.documentElement.removeAttribute("data-theme");
-        themeBtn.innerHTML = `<button>Dark</button>`;
-    }
-
-    localStorage.setItem("theme", theme);
-};
-
-const changeTheme = () => {
-    const isDark = document.documentElement.dataset.theme === "dark";
-
-    if (isDark) {
-        setTheme("light");
-    } else {
-        setTheme("dark");
-    }
-};
-
-const loadTheme = () => {
-    const savedTheme = localStorage.getItem("theme");
-
-    if (savedTheme) {
-        setTheme(savedTheme);
-    }
-};
-
-const refreshBtn = document.querySelector(".refresh-btn");
-
-// ===========================
-//    EVENT LISTENERS
-// ===========================
-
-if (themeBtn) {
-    themeBtn.addEventListener("click", () => {
-        changeTheme();
-    });
-}
-
-//========== GLOBAL FUNCTION CALL===========
-
-initializeQuote();
-loadTheme();
